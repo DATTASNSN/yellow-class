@@ -105,19 +105,19 @@ class Pictures extends React.Component {
             <span style={loadingTextCSS}>Loading...</span>
           </div>
           <Modal
-          isOpen={this.state.isOpen}
-          onRequestClose={this.closeModal}
-          style={customStyles}
-          contentLabel="Example Modal"
-        >
-          <button onClick={()=> (this.state.pictures.map((img,id)=> id === this.state.id-1 && (this.setState({image:img.user.profile_image.large,isOpen: true,id:this.state.id-1}))))}  className="ButtonStyle">
-            <BsFillCaretLeftFill size='5em' className="IconChange" />
-          </button>
-          <img src={this.state.image} className="Pictures-large-logo text--center" alt='' />
-          <button onClick={()=> (this.state.pictures.map((img,id)=> id === this.state.id+1 && (this.setState({image:img.user.profile_image.large,isOpen: true,id:this.state.id+1}))))}  className="ButtonStyle">
-            <BsFillCaretRightFill size='5em' className="IconChange" />
-          </button>
-        </Modal>
+            isOpen={this.state.isOpen}
+            onRequestClose={this.closeModal}
+            style={customStyles}
+            contentLabel="Example Modal"
+          >
+            <button onClick={()=> (this.state.pictures.map((img,id)=> id === this.state.id-1 && (this.setState({image:img.user.profile_image.large,isOpen: true,id:this.state.id-1}))))}  className="ButtonStyle">
+              <BsFillCaretLeftFill size='5em' className="IconChange" />
+            </button>
+            <img src={this.state.image} className="Pictures-large-logo text--center" alt='' />
+            <button onClick={()=> (this.state.pictures.map((img,id)=> id === this.state.id+1 && (this.setState({image:img.user.profile_image.large,isOpen: true,id:this.state.id+1}))))}  className="ButtonStyle">
+              <BsFillCaretRightFill size='5em' className="IconChange" />
+            </button>
+          </Modal>
         </ul>
       </div>
     );
