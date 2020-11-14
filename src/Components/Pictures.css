@@ -1,0 +1,19 @@
+.Pictures-logo {
+  height: 10vmin;
+  margin-right: 2em !important;
+}
+.Pictures-large-logo {
+  height: 30vmin !important;
+  pointer-events: none;
+  margin-left: 15em !important;
+  margin-right: 15em !important;
+  margin-top: 5em !important;
+}
+.IconChange {
+  margin-bottom: 5em !important;
+}
+.ButtonStyle {
+  background: none;
+  border-width: 0em !important;
+  border-collapse: collapse;
+}
